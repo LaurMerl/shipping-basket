@@ -1,0 +1,14 @@
+{
+  "name": "shopping-basket",
+  "version": "1.0.0",
+  "description": "Simple shopping-basket developed for R3PI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laura Merlo | Developer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
