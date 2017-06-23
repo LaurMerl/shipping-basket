@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Laura Merlo | Developer</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="mainContent">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2 class="modal-title"></h2>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2>Welcome to Laura's Grocery shop</h2>
+			</div>
+			<div>
+				<p class="clearAll" onclick="clearAllBasket()">ClearAllBasket</p>
+			</div>
+			<div>
+				<h3>How can I help you?</h3>
+				<div class="buttonContainer">
+					<button type="button" id="appleButton" href="javascript:void(0)" onclick="addProductToTable('Apple')">Apple</button>
+					<button type="button" id="bananaButton" href="javascript:void(0)" onclick="addProductToTable('Banana')">Banana</button>
+					<button type="button" id="papayaButton" href="javascript:void(0)" onclick="addProductToTable('Papaya')">Papaya</button>
+					<button type="button" id="orangeButton" href="javascript:void(0)" onclick="addProductToTable('Orange')">Orange</button>
+				</div>
+			</div>
+			<div id="basket">
+				<table id="basketTable">
+					<tr>
+						<th>Product</th>
+						<th>Price/unity</th>
+						<th>Quantity</th>
+						<th>Partial cost</th>
+						<th></th>
+					</tr>
+				</table>
+				<div class="result">
+					<div class="left">
+						<h1>Total Cost</h1>
+						<p>*Including all taxes</p>
+					</div>
+					<div class="right" id="totalAmount">
+						&#8364;<input name="total" id="total" value="0.00" readonly/>
+					</div>
+				</div>
+				<div id="button">
+					<a href="javascript:void(0)" onclick="sendCookie();">
+						<h1>Buy!</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+		<script src="js/cookie_functionality.js"></script>
+		<script src="js/modal_functionality.js"></script>
+	</body>
+</html>
